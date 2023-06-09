@@ -29,7 +29,7 @@ namespace AssignmentTest
         public void TestLoadCommand_LoadedSuccessfully()
         {
             Robot robot = new Robot();
-            RobotCommand command = new WestCommand(); 
+            RobotCommand command = new WestCommand();
 
             bool result = robot.LoadCommand(command);
 

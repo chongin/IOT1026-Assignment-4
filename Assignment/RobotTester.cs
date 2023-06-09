@@ -22,14 +22,12 @@ namespace Assignment
         public void TestRobot()
         {
             Console.WriteLine($"Give {_totalCommandCount} commands to the robot. Possible commands are:");
-            
             foreach (string item in _supportCommands)
             {
                 Console.WriteLine(item);
             }
 
             Console.WriteLine("");
-
             LoadCommandToRobot();
             _robot.Run();
         }
