@@ -15,7 +15,6 @@ namespace Assignment
             _totalCommandCount = 6;
             _supportCommands = new List<string>();
             InitCommandNames();
-            
             _robot = new Robot(_totalCommandCount);
         }
 
