@@ -39,7 +39,7 @@ namespace Assignment
             int selectedCommandCount = 0;
             while (selectedCommandCount < _totalCommandCount)
             {
-                string commandName = Console.ReadLine();
+                string commandName = Console.ReadLine() ?? "";
                 if (!CheckCommand(commandName))
                 {
                     Console.WriteLine("Invalid command, try again!");
@@ -64,7 +64,7 @@ namespace Assignment
         private RobotCommand CreateCommandByName(string name)
         {
             string className = $"Assignment.InterfaceCommand.{name}Command";
-            Type classType = Type.GetType(className);
+            Type classType = Type.GetType(className) ?? typeof(RobotCommand);
             return (RobotCommand)Activator.CreateInstance(classType);
         }
 

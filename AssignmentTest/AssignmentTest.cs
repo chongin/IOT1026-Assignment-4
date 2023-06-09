@@ -40,8 +40,8 @@ namespace AssignmentTest
         public void LoadCommand_CommandLimitExceeded()
         {
             Robot robot = new Robot(1);
-            RobotCommand command1 = new WestCommand(); 
-            RobotCommand command2 = new OnCommand(); 
+            RobotCommand command1 = new WestCommand();
+            RobotCommand command2 = new OnCommand();
 
             bool result1 = robot.LoadCommand(command1);
             bool result2 = robot.LoadCommand(command2);
