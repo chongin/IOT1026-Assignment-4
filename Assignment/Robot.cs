@@ -47,7 +47,7 @@ public class Robot
     /// </summary>
     public void Run()
     {
-        while(_commands.Count>0)
+        while (_commands.Count > 0)
         {
             RobotCommand command = _commands.Dequeue();
             command.Run(this);
